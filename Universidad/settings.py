@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 import os
 
+if 'RAILWAY_STATIC_URL' in os.environ:
+    CSRF_TRUSTED_ORIGINS = [f"https://{os.environ['RAILWAY_STATIC_URL']}"]
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
