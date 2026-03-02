@@ -119,3 +119,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Universidad/settings.py
+
+# Reemplaza con tu URL real de Railway (sin el /al final)
+CSRF_TRUSTED_ORIGINS = ['https://hostal-django-app-production.up.railway.app']
+
